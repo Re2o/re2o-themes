@@ -3,131 +3,121 @@
  */
 
 // Generic
-$success-color: none;
-$success-alt-color: none;
-$success-focus-color: none;
-$success-link-color: none;
-
-$info-color: none;
-$info-alt-color: none;
-$info-focus-color: none;
-$info-link-color: none;
-
-$warning-color: none;
-$warning-alt-color: none;
-$warning-focus-color: none;
-$warning-link-color: none;
-
-$danger-color: none;
-$danger-alt-color: none;
-$danger-focus-color: none;
-$danger-link-color: none;
-
 $primary-color: none;
 $primary-focus-color: none;
-$primary-active-color: none;
-$primary-active-focus-color: none;
-$primary-disabled: none;
 
+$secondary-color: none;
+$secondary-focus-color: none;
 
-// Body
-$body-text-color: none;
-$body-background-color: none;
+$success-color: none;
+$success-focus-color: none;
+
+$info-color: none;
+$info-focus-color: none;
+
+$warning-color: none;
+$warning-focus-color: none;
+
+$danger-color: none;
+$danger-focus-color: none;
+
+$light-color: none;
+$light-focus-color: none;
+
+$dark-color: none;
+$dark-focus-color: none;
+
+$background-color: none;
+$background-alt-color: none;
+
+$border-color: none;
 
 
 // Text
-$text-standard-color: none; // text in buttons etc.
-$text-alt-color: none;  // text on hover
-$text-disabled-color: none;
+$text-color: none;
+$text-alt-color: none;
+$text-focus-color: none;
 
-$text-primary-color: none;  // text in .*-primary
-$text-primary-focus-color: none;
-$text-help-color: none;
+$text-primary-color: none;
+$text-secondary-color: none;
 $text-muted-color: none;
+$text-help-color: none;
 
 $link-color: none;
 $link-focus-color: none;
 
 
+// Forms
+$forms-text-color: none;
+$forms-background-color: none;
+
+
+// Django autocomplete light
+$dal-result-focus-background-color: none;
+
+
 // Navbar
 $navbar-text-color: none;
+$navbar-text-focus-color: none;
+$navbar-text-disabled-color: none;
 $navbar-brand-color: none;
+
 $navbar-background-color: none;
-$navbar-border-color:none;
+$navbar-background-active-color: none;
+$navbar-border-color: transparent;
 
-$navbar-focus-text-color: none;
-$navbar-active-text-color: none;
-$navbar-active-background-color: none;
-$navbar-open-text-color: none;
-$navbar-open-background-color: none;
-$navbar-disabled-text-color: none;
-
-$secondary-navbar-text-color: none;
 $secondary-navbar-background-color: none;
 
 
-// Menus
-$dropdown-menu-text-color: none;
-$dropdown-menu-background-color: none;
-$dropdown-menu-focus-text-color: none;
-$dropdown-menu-focus-background-color: none;
-$dropdown-menu-divider-color: none;
-$dropdown-menu-disabled-color: none;
+// Dropdown
+$dropdown-background-focus-color: none;
 
 
-// Buttons
-$button-default-color: none;
-$button-default-focus-color: none;
-$button-default-active-color: none;
-$button-default-active-focus-color: none;
-$button-default-disabled-focus-color: none;
-$button-default-badge-text-color: none;
-$button-default-badge-background-color: none;
+// Alerts
+$alert-link-color: none;
 
-$button-success-active-focus-color: none;
-$button-success-disabled-focus-color: none;
-$button-success-badge-text-color: none;
-$button-success-badge-background-color: none;
 
-$button-info-active-focus-color: none;
-$button-info-disabled-focus-color: none;
-$button-info-badge-text-color: none;
-$button-info-badge-background-color: none;
-
-$button-warning-active-focus-color: none;
-$button-warning-disabled-focus-color: none;
-$button-warning-badge-text-color: none;
-$button-warning-badge-background-color: none;
-
-$button-danger-active-focus-color: none;
-$button-danger-disabled-focus-color: none;
-$button-danger-badge-text-color: none;
-$button-danger-badge-background-color: none;
+// Pagination
+$pagination-border-color: none;
 
 
 // Panels
 $panel-background-color: none;
+$panel-background-focus-color: none;
+$panel-text-focus-color: none;
 $panel-border-color: none;
-$panel-default-background-color: none; // .panel-default elements
-$panel-footer-background-color: none;
+
 $panel-heading-background-color: none;
+$panel-footer-background-color: none;
+
 $panel-badge-text-color: none;
 $panel-badge-background-color: none;
 
-$thumbnail-text-color: none;
-$thumbnail-background-color: none;
+
+// Cards
+$thumbnail-background-color: transparent;
 $thumbnail-border-color: none;
-$thumbnail-focus-border-color: none;
+
+
+// Modals
+$modal-background-color: none;
+$modal-border-color: none;
+$modal-heading-background-color: none;
+$modal-heading-border-color: none;
 
 
 // Tables
-$table-text-color: none;
-$table-background-color: none;
-$table-alt-background-color: none;  // Odd elements have this color
-$table-border-color: none;
-$table-focus-background-color: none;
-$table-active-background-color: none;
-$table-active-focus-background-color: none;
+$table-background-color: transparent;
+$table-alt-background-color: none;
+
+$table-default-background-color: none;
+$table-default-focus-background-color: none;
+
+$table-primary-background-color: none;
+$table-primary-focus-background-color: none;
+
+$table-secondary-background-color: none;
+$table-secondary-focus-background-color: none;
 
 $table-success-background-color: none;
 $table-success-focus-background-color: none;
@@ -141,66 +131,13 @@ $table-warning-focus-background-color: none;
 $table-danger-background-color: none;
 $table-danger-focus-background-color: none;
 
+$table-light-background-color: none;
+$table-light-focus-background-color: none;
+
+$table-dark-background-color: none;
+$table-dark-focus-background-color: none;
+
 
 // Lists
 $list-background-color: none;
-$list-disabled-text-color: none;
-$list-disabled-background-color: none;
-$list-disabled-focus-text-color: none;
-$list-active-text-color: none;
-$list-active-background-color: none;
-$list-active-border-color: none;
-
-$list-badge-text-color: none;
-$list-badge-background-color: none;
-
-$list-link-text-color: none;
-$list-link-focus-text-color: none;
-$list-heading-text-color: none;
-
-$list-success-link-background-color: none;
-$list-success-link-focus-background-color: none;
-$list-success-active-focus-background-color: none;
-
-$list-info-link-background-color: none;
-$list-info-link-focus-background-color: none;
-$list-info-active-focus-background-color: none;
-
-$list-warning-link-background-color: none;
-$list-warning-link-focus-background-color: none;
-$list-warning-active-focus-background-color: none;
-
-$list-danger-link-background-color: none;
-$list-danger-link-focus-background-color: none;
-$list-danger-active-focus-background-color: none;
-
-
-// Pagination
-$pagination-background-color: none;
-$pagination-border-color: none;
-$pagination-focus-background-color: none;
-$pagination-focus-border-color: none;
-$pagination-active-background-color: none;
-$pagination-active-border-color: none;
-$pagination-disabled-text-color: none;
-$pagination-disabled-background-color: none;
-$pagination-disabled-border-color: none;
-
-
-// Forms
-$forms-text-color: none;
-$forms-background-color: none;
-$forms-border-color: none;
-
-
-// Django autocomplete light
-$dal-text-color: none;
-$dal-background-color: none;
-$dal-border-color: none;
-
-$dal-result-focus-text-color: none;
-$dal-result-focus-background-color: none;
-
-$dal-input-text-color: none;
-$dal-input-background-color: none;
-$dal-input-border-color: none;
+$list-border-color: transparent;

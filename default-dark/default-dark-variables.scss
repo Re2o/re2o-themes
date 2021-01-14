@@ -1,202 +1,139 @@
 // Generic
-$success-color: #009670;
-$success-alt-color: #03775a;
-$success-focus-color: #03775a;
-$success-link-color: #e6e6e6;
-
-$info-color: #2384c6;
-$info-alt-color: #217dbb;
-$info-focus-color: #217dbb;
-$info-link-color: #e6e6e6;
-
-$warning-color: #df8900;
-$warning-alt-color: #c77b00;
-$warning-focus-color: #c87f0a;
-$warning-link-color: #e6e6e6;
-
-$danger-color: #e12e1c;
-$danger-alt-color: #e43725;
-$danger-focus-color: #d62c1a;
-$danger-link-color: #e6e6e6;
-
 $primary-color: #375a7f;
-$primary-focus-color: #28415b;
-$primary-active-color: #375a7f;
-$primary-active-focus-color: #1d2f43;
-$primary-disabled: #375a7f;
+$primary-focus-color: #2b4764;
 
+$secondary-color: #444444;
+$secondary-focus-color: #2C2C2C;
 
-// Body
-$body-text-color: #ffffff;
-$body-background-color: #222222;
+$success-color: #00bc8c;
+$success-focus-color: #009670;
+
+$info-color: #3498db;
+$info-focus-color: #2384c6;
+
+$warning-color: #f39c12;
+$warning-focus-color: #d4860b;
+
+$danger-color: #e74c3c;
+$danger-focus-color: #e12e1c;
+
+$light-color: #adb5bd;
+$light-focus-color: #9fa8b2;
+
+$dark-color: #303030;
+$dark-focus-color: #232323;
+
+$background-color: #222222;
+$background-alt-color: #303030;
+
+$border-color: #454545;
 
 
 // Text
-$text-standard-color: #ffffff; // text in buttons etc.
-$text-alt-color: #303030;  // text on hover
-$text-disabled-color: #999999;
+$text-color: #ffffff;
+$text-alt-color: #222222;
+$text-focus-color: #303030;
 
-$text-primary-color: #375a7f;  // text in .*-primary
-$text-primary-focus-color: #28415b;
+$text-primary-color: #375a7f;
+$text-secondary-color: #444444;
+$text-muted-color: #888888;
 $text-help-color: #aaaaaa;
-$text-muted-color: #999999;
 
 $link-color: #337ab7;
 $link-focus-color: #49a8e8;
 
 
+// Forms
+$forms-text-color: #555555;
+$forms-background-color: #ffffff;
+
+
+// Django autocomplete light
+$dal-result-focus-background-color: #5897fb;
+
+
 // Navbar
-$navbar-text-color: #d6d6d6;
+$navbar-text-color: rgba($text-color, 0.6);
+$navbar-text-focus-color: $text-color;
+$navbar-text-disabled-color: rgba($text-color, 0.4);
 $navbar-brand-color: #ffffff;
+
 $navbar-background-color: #222222;
+$navbar-background-active-color: #080808;
 $navbar-border-color: transparent;
 
-$navbar-focus-text-color: #ffffff;
-$navbar-active-text-color: #d6d6d6;
-$navbar-active-background-color: #28415b;
-$navbar-open-text-color: #ffffff;
-$navbar-open-background-color: #d6d6d6;
-$navbar-disabled-text-color: #cccccc;
-
-$secondary-navbar-text-color: #d6d6d6;
 $secondary-navbar-background-color: #333333;
 
 
-// Menus
-$dropdown-menu-text-color: #ebebeb;
-$dropdown-menu-background-color: #303030;
-$dropdown-menu-focus-text-color: #ffffff;
-$dropdown-menu-focus-background-color: #375a7f;
-$dropdown-menu-divider-color: #454545;
-$dropdown-menu-disabled-color: #999999;
+// Dropdown
+$dropdown-background-focus-color: #375a7f;
 
 
-// Buttons
-$button-default-color: #454545;
-$button-default-focus-color: #2c2c2c;
-$button-default-active-color: #272727;
-$button-default-active-focus-color: #1a1a1a;
-$button-default-disabled-focus-color: #454545;
-$button-default-badge-text-color: #454545;
-$button-default-badge-background-color: #ffffff;
+// Alerts
+$alert-link-color: $text-color;
 
-$button-success-active-focus-color: #00654b;
-$button-success-disabled-focus-color: #49a8e8;
-$button-success-badge-text-color: #49a8e8;
-$button-success-badge-background-color: #ffffff;
 
-$button-info-active-focus-color: #1c699d;
-$button-info-disabled-focus-color: #285879;
-$button-info-badge-text-color: #3498db;
-$button-info-badge-background-color: #ffffff;
-
-$button-warning-active-focus-color: #a66908;
-$button-warning-disabled-focus-color: #df8900;
-$button-warning-badge-text-color: #df8900;
-$button-warning-badge-background-color: #ffffff;
-
-$button-danger-active-focus-color: #b62516;
-$button-danger-disabled-focus-color: #e12e1c;
-$button-danger-badge-text-color: #e12e1c;
-$button-danger-badge-background-color: #ffffff;
+// Pagination
+$pagination-border-color: #505050;
 
 
 // Panels
 $panel-background-color: #303030;
-$panel-border-color: #454545;
-$panel-default-background-color: #454545; // .panel-default elements
-$panel-footer-background-color: #454545;
-$panel-heading-background-color: #303030;
+$panel-background-focus-color: #505050;
+$panel-text-focus-color: $text-color;
+$panel-border-color: $border-color;
+
+$panel-heading-background-color: #353535;
+$panel-footer-background-color: #353535;
+
 $panel-badge-text-color: #303030;
 $panel-badge-background-color: #ffffff;
 
-$thumbnail-text-color: #ffffff;
-$thumbnail-background-color: #222222;
-$thumbnail-border-color: #454545;
-$thumbnail-focus-border-color: #49a8e8;
+
+// Cards
+$thumbnail-background-color: transparent;
+$thumbnail-border-color: $border-color;
+
+
+// Modals
+$modal-background-color: $panel-background-color;
+$modal-border-color: $border-color;
+$modal-heading-background-color: $modal-background-color;
+$modal-heading-border-color: $border-color;
 
 
 // Tables
-$table-text-color: #999999;
-$table-background-color: #222222;
-$table-alt-background-color: #3d3d3d;  // Odd elements have this color
-$table-border-color: #454545;
-$table-focus-background-color: #454545;
-$table-active-background-color: #454545;
-$table-active-focus-background-color: #393838;
+$table-background-color: transparent;
+$table-alt-background-color: $secondary-focus-color;
 
-$table-success-background-color: #407293;
-$table-success-focus-background-color: #00a379;
+$table-default-background-color: #222222;
+$table-default-focus-background-color: $table-default-background-color;
 
-$table-info-background-color: #3498db;
-$table-info-focus-background-color: #258cd1;
+$table-primary-background-color: $primary-color;
+$table-primary-focus-background-color: $primary-focus-color;
 
-$table-warning-background-color: #df8900;
-$table-warning-focus-background-color: #c77b00;
+$table-secondary-background-color: $secondary-color;
+$table-secondary-focus-background-color: $secondary-focus-color;
 
-$table-danger-background-color: #86413a;
-$table-danger-focus-background-color: #e43725;
+$table-success-background-color: $success-color;
+$table-success-focus-background-color: $success-focus-color;
+
+$table-info-background-color: $info-color;
+$table-info-focus-background-color: $info-focus-color;
+
+$table-warning-background-color: $warning-color;
+$table-warning-focus-background-color: $warning-focus-color;
+
+$table-danger-background-color: $danger-color;
+$table-danger-focus-background-color: $danger-focus-color;
+
+$table-light-background-color: $light-color;
+$table-light-focus-background-color: $light-focus-color;
+
+$table-dark-background-color: $dark-color;
+$table-dark-focus-background-color: $dark-focus-color;
 
 
 // Lists
-$list-background-color: #303030;
-$list-disabled-text-color: #999999;
-$list-disabled-background-color: #ebebeb;
-$list-disabled-focus-text-color: #999999;
-$list-active-text-color: #a8c0da;
-$list-active-background-color: #375a7f;
-$list-active-border-color: #375a7f;
-
-$list-badge-text-color: #375a7f;
-$list-badge-background-color: #ffffff;
-
-$list-link-text-color: #49a8e8;
-$list-link-focus-text-color: #49a8e8;
-$list-heading-text-color: #0bcb9a;
-
-$list-success-link-background-color: #49a8e8;
-$list-success-link-focus-background-color: #00a379;
-$list-success-active-focus-background-color: #ffffff;
-
-$list-info-link-background-color: #2384c6;
-$list-info-link-focus-background-color: #258cd1;
-$list-info-active-focus-background-color: #ffffff;
-
-$list-warning-link-background-color: #df8900;
-$list-warning-link-focus-background-color: #c77b00;
-$list-warning-active-focus-background-color: #ffffff;
-
-$list-danger-link-background-color: #e12e1c;
-$list-danger-link-focus-background-color: #e43725;
-$list-danger-active-focus-background-color: #ffffff;
-
-
-// Pagination
-$pagination-background-color: #2b2b2b;
-$pagination-border-color: #454545;
-$pagination-focus-background-color: #3d3d3d;
-$pagination-focus-border-color: #454545;
-$pagination-active-background-color: #375a7f;
-$pagination-active-border-color: #454545;
-$pagination-disabled-text-color: #454545;
-$pagination-disabled-background-color: #303030;
-$pagination-disabled-border-color: #454545;
-
-
-// Forms
-$forms-text-color: #555555;
-$forms-background-color: #ffffff;
-$forms-border-color: #cccccc;
-
-
-// Django autocomplete light
-$dal-text-color: #555555;
-$dal-background-color: #ffffff;
-$dal-border-color: #cccccc;
-
-$dal-result-focus-text-color: #ffffff;
-$dal-result-focus-background-color: #5897fb;
-
-$dal-input-text-color: #000000;
-$dal-input-background-color: #ffffff;
-$dal-input-border-color: #cccccc;
+$list-background-color: $background-alt-color;
+$list-border-color: transparent;
