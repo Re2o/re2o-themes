@@ -52,6 +52,12 @@ $forms-text-color: none;
 $forms-background-color: none;
 
 
+// Vue.js tree
+$tree-text-focus-color: none;
+$tree-background-focus-color: none;
+$tree-background-selected-color: none;
+
+
 // Django autocomplete light
 $dal-result-focus-background-color: none;
 
@@ -64,7 +70,7 @@ $navbar-brand-color: none;
 
 $navbar-background-color: none;
 $navbar-background-active-color: none;
-$navbar-border-color: transparent;
+$navbar-border-color: none;
 
 $secondary-navbar-background-color: none;
 
@@ -95,7 +101,7 @@ $panel-badge-background-color: none;
 
 
 // Cards
-$thumbnail-background-color: transparent;
+$thumbnail-background-color: none;
 $thumbnail-border-color: none;
 
 
@@ -107,7 +113,7 @@ $modal-heading-border-color: none;
 
 
 // Tables
-$table-background-color: transparent;
+$table-background-color: none;
 $table-alt-background-color: none;
 
 $table-default-background-color: none;
@@ -140,4 +146,4 @@ $table-dark-focus-background-color: none;
 
 // Lists
 $list-background-color: none;
-$list-border-color: transparent;
+$list-border-color: none;

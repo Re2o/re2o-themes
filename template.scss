@@ -181,10 +181,16 @@ a:hover {
 }
 .tree-node > .tree-content:focus > .tree-anchor,
 .tree-node > .tree-content:hover > .tree-anchor {
-    color: $text-focus-color !important;
+    color: $tree-text-focus-color !important;
 }
 .tree-node.selected > .tree-content > .tree-anchor {
-    color: $text-focus-color !important;
+    color: $tree-text-focus-color !important;
+}
+.tree-node > .tree-content:hover {
+    background-color: $tree-background-focus-color !important;
+}
+.tree-node.selected > .tree-content {
+    background-color: $tree-background-selected-color !important;
 }
 
 
