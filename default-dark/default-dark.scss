@@ -4,5 +4,9 @@
 * Copyright © 2021  Jean-Romain Garnier
  */
 
+// Import this so, if variables are introduced at a later time, the theme still compiles
+// it will keep the default behavior as all variables are set to none in the template
+@import '../template-variables.scss';
+
 @import './default-dark-variables.scss';
 @import '../template.scss';
