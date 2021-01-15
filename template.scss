@@ -831,6 +831,9 @@ a.thumbnail:hover {
 table {
     background-color: $table-background-color;
 }
+.table-responsive {
+    border-color: $border-color !important;
+}
 caption {
     color: $text-color;
 }
