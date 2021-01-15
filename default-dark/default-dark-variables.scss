@@ -32,10 +32,9 @@ $border-color: #454545;
 // Text
 $text-color: #ffffff;
 $text-alt-color: #222222;
-$text-focus-color: #303030;
 
-$text-primary-color: #375a7f;
-$text-secondary-color: #444444;
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
 $text-muted-color: #888888;
 $text-help-color: #aaaaaa;
 
@@ -56,6 +55,7 @@ $tree-background-selected-color: #606060;
 
 // Django autocomplete light
 $dal-result-focus-background-color: #5897fb;
+$dal-result-selected-background-color: #dddddd;
 
 
 // Navbar
@@ -75,26 +75,40 @@ $secondary-navbar-background-color: #333333;
 $dropdown-background-focus-color: #375a7f;
 
 
+// Buttons
+$button-text-color: $text-color;
+
+
 // Alerts
-$alert-link-color: $text-color;
+$alert-text-color: $text-color;
+$alert-link-color: $alert-text-color;
 
 
 // Pagination
+$pagination-text-color: $text-color;
+$pagination-background-color: $secondary-color;
+$pagination-focus-background-color: $secondary-focus-color;
+
+$pagination-active-text-color: $text-color;
+$pagination-active-background-color: $primary-color;
+
 $pagination-border-color: #505050;
 
 
 // Panels
+$panel-text-color: $text-color;
+$panel-text-focus-color: $panel-text-color;
+$panel-text-default-color: $text-color;
 $panel-background-color: #303030;
 $panel-background-focus-color: #505050;
-$panel-text-focus-color: $text-color;
 $panel-border-color: $border-color;
 
-$panel-heading-link-color: $text-color;
 $panel-heading-background-color: #353535;
 $panel-footer-background-color: #353535;
 
 $panel-badge-text-color: #303030;
 $panel-badge-background-color: #ffffff;
+$panel-badge-alt-background-color: $panel-badge-background-color;
 
 
 // Cards
@@ -113,34 +127,36 @@ $modal-heading-border-color: $border-color;
 $table-background-color: transparent;
 $table-alt-background-color: $secondary-focus-color;
 
+$table-default-text-color: $text-color;
 $table-default-background-color: #222222;
 $table-default-focus-background-color: $table-default-background-color;
 
-$table-primary-background-color: $primary-color;
-$table-primary-focus-background-color: $primary-focus-color;
-
-$table-secondary-background-color: $secondary-color;
-$table-secondary-focus-background-color: $secondary-focus-color;
-
+$table-success-text-color: $text-color;
 $table-success-background-color: $success-color;
 $table-success-focus-background-color: $success-focus-color;
 
+$table-info-text-color: $text-color;
 $table-info-background-color: $info-color;
 $table-info-focus-background-color: $info-focus-color;
 
+$table-warning-text-color: $text-color;
 $table-warning-background-color: $warning-color;
 $table-warning-focus-background-color: $warning-focus-color;
 
+$table-danger-text-color: $text-color;
 $table-danger-background-color: $danger-color;
 $table-danger-focus-background-color: $danger-focus-color;
 
+$table-light-text-color: $text-color;
 $table-light-background-color: $light-color;
 $table-light-focus-background-color: $light-focus-color;
 
+$table-dark-text-color: $text-color;
 $table-dark-background-color: $dark-color;
 $table-dark-focus-background-color: $dark-focus-color;
 
 
 // Lists
+$list-text-color: #ffffff;
 $list-background-color: $background-alt-color;
 $list-border-color: transparent;

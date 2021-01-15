@@ -36,7 +36,6 @@ $border-color: none;
 // Text
 $text-color: none;
 $text-alt-color: none;
-$text-focus-color: none;
 
 $text-primary-color: none;
 $text-secondary-color: none;
@@ -60,6 +59,7 @@ $tree-background-selected-color: none;
 
 // Django autocomplete light
 $dal-result-focus-background-color: none;
+$dal-result-selected-background-color: none;
 
 
 // Navbar
@@ -79,26 +79,40 @@ $secondary-navbar-background-color: none;
 $dropdown-background-focus-color: none;
 
 
+// Buttons
+$button-text-color: none;
+
+
 // Alerts
+$alert-text-color: none;
 $alert-link-color: none;
 
 
 // Pagination
+$pagination-text-color: none;
+$pagination-background-color: none;
+$pagination-focus-background-color: none;
+
+$pagination-active-text-color: none;
+$pagination-active-background-color: none;
+
 $pagination-border-color: none;
 
 
 // Panels
+$panel-text-color: none;
+$panel-text-focus-color: none;
+$panel-text-default-color: none;
 $panel-background-color: none;
 $panel-background-focus-color: none;
-$panel-text-focus-color: none;
 $panel-border-color: none;
 
-$panel-heading-link-color: none;
 $panel-heading-background-color: none;
 $panel-footer-background-color: none;
 
 $panel-badge-text-color: none;
 $panel-badge-background-color: none;
+$panel-badge-alt-background-color: none;
 
 
 // Cards
@@ -117,34 +131,36 @@ $modal-heading-border-color: none;
 $table-background-color: none;
 $table-alt-background-color: none;
 
+$table-default-text-color: none;
 $table-default-background-color: none;
 $table-default-focus-background-color: none;
 
-$table-primary-background-color: none;
-$table-primary-focus-background-color: none;
-
-$table-secondary-background-color: none;
-$table-secondary-focus-background-color: none;
-
+$table-success-text-color: none;
 $table-success-background-color: none;
 $table-success-focus-background-color: none;
 
+$table-info-text-color: none;
 $table-info-background-color: none;
 $table-info-focus-background-color: none;
 
+$table-warning-text-color: none;
 $table-warning-background-color: none;
 $table-warning-focus-background-color: none;
 
+$table-danger-text-color: none;
 $table-danger-background-color: none;
 $table-danger-focus-background-color: none;
 
+$table-light-text-color: none;
 $table-light-background-color: none;
 $table-light-focus-background-color: none;
 
+$table-dark-text-color: none;
 $table-dark-background-color: none;
 $table-dark-focus-background-color: none;
 
 
 // Lists
+$list-text-color: none;
 $list-background-color: none;
 $list-border-color: none;

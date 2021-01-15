@@ -118,7 +118,7 @@ a:hover {
     background-color: $warning-color;
 }
 .badge-danger {
-    color: $text-alt-color;
+    color: $text-color;
     background-color: $danger-color;
 }
 .badge-light {
@@ -126,7 +126,7 @@ a:hover {
     background-color: $light-color;
 }
 .badge-dark {
-    color: $text-color;
+    color: $text-alt-color;
     background-color: $dark-color;
 }
 
@@ -134,6 +134,10 @@ a:hover {
 /*
  * Forms
  */
+ ::placeholder {
+    color: $forms-text-color;
+    opacity: 1;
+ }
 .form-control {
     color: $forms-text-color;
     background-color: $forms-background-color;
@@ -145,6 +149,9 @@ a:hover {
 .form-control .is-invalid {
     border-color: $danger-color;
 }
+.input-group-btn > .btn {
+    border-color: $border-color;
+}
 
 
 /*
@@ -154,10 +161,13 @@ a:hover {
 	color: $forms-text-color;
 }
 .select2-dropdown {
-    background-color: $forms-background-color;
+    background-color: $forms-background-color !important;
 }
 .select2-container--default {
     border-color: $border-color;
+}
+.select2-container--default .select2-selection--single {
+    background-color: $forms-background-color;
 }
 .select2-search__field {
     color: $forms-text-color;
@@ -168,8 +178,12 @@ a:hover {
     background-color: $forms-background-color;
 }
 .select2-results__option--highlighted {
-    color: $text-color;
-    background-color: $dal-result-focus-background-color;
+    color: $text-color !important;
+    background-color: $dal-result-focus-background-color !important;
+}
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    color: $text-color !important;
+    background-color: $dal-result-selected-background-color !important;
 }
 
 
@@ -225,13 +239,13 @@ a:hover {
 
 .navbar-default .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > li > a {
-    color: $navbar-text-color;
+    color: $navbar-text-color !important;
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: $navbar-text-focus-color;
+    color: $navbar-text-focus-color !important;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -255,7 +269,8 @@ a:hover {
     color: $navbar-text-color !important;
 }
 .navbar-inverse .dropdown-menu .btn-link:hover {
-    background-color: $navbar-background-active-color !important;
+    color: $navbar-text-focus-color !important;
+    background-color: $navbar-background-color !important;
 }
 
 
@@ -301,21 +316,21 @@ a:hover {
 }
 
 .btn-default {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
 }
 .btn-default.focus,
 .btn-default:focus,
 .btn-default:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
 .btn-default.active,
 .btn-default:active,
 .open > .dropdown-toggle.btn-default {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
@@ -328,27 +343,27 @@ a:hover {
 .open > .dropdown-toggle.btn-default.focus,
 .open > .dropdown-toggle.btn-default:focus,
 .open > .dropdown-toggle.btn-default:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
 
 .btn-primary {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $primary-color;
     border-color: $primary-color;
 }
 .btn-primary.focus,
 .btn-primary:focus,
 .btn-primary:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $primary-focus-color;
     border-color: $primary-focus-color;
 }
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $primary-focus-color;
     border-color: $primary-focus-color;
 }
@@ -361,27 +376,27 @@ a:hover {
 .open > .dropdown-toggle.btn-primary.focus,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $primary-focus-color;
     border-color: $primary-focus-color;
 }
 
 .btn-secondary {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
 }
 .btn-secondary.focus,
 .btn-secondary:focus,
 .btn-secondary:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
 .btn-secondary.active,
 .btn-secondary:active,
 .open > .dropdown-toggle.btn-secondary {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
@@ -394,27 +409,27 @@ a:hover {
 .open > .dropdown-toggle.btn-secondary.focus,
 .open > .dropdown-toggle.btn-secondary:focus,
 .open > .dropdown-toggle.btn-secondary:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $secondary-focus-color;
     border-color: $secondary-focus-color;
 }
 
 .btn-success {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $success-color;
     border-color: $success-color;
 }
 .btn-success.focus,
 .btn-success:focus,
 .btn-success:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $success-focus-color;
     border-color: $success-focus-color;
 }
 .btn-success.active,
 .btn-success:active,
 .open > .dropdown-toggle.btn-success {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $success-focus-color;
     border-color: $success-focus-color;
 }
@@ -427,27 +442,27 @@ a:hover {
 .open > .dropdown-toggle.btn-success.focus,
 .open > .dropdown-toggle.btn-success:focus,
 .open > .dropdown-toggle.btn-success:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $success-focus-color;
     border-color: $success-focus-color;
 }
 
 .btn-info {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $info-color;
     border-color: $info-color;
 }
 .btn-info.focus,
 .btn-info:focus,
 .btn-info:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $info-focus-color;
     border-color: $info-focus-color;
 }
 .btn-info.active,
 .btn-info:active,
 .open > .dropdown-toggle.btn-info {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $info-focus-color;
     border-color: $info-focus-color;
 }
@@ -460,27 +475,27 @@ a:hover {
 .open > .dropdown-toggle.btn-info.focus,
 .open > .dropdown-toggle.btn-info:focus,
 .open > .dropdown-toggle.btn-info:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $info-focus-color;
     border-color: $info-focus-color;
 }
 
 .btn-warning {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $warning-color;
     border-color: $warning-color;
 }
 .btn-warning.focus,
 .btn-warning:focus,
 .btn-warning:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $warning-focus-color;
     border-color: $warning-focus-color;
 }
 .btn-warning.active,
 .btn-warning:active,
 .open > .dropdown-toggle.btn-warning {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $warning-focus-color;
     border-color: $warning-focus-color;
 }
@@ -493,27 +508,27 @@ a:hover {
 .open > .dropdown-toggle.btn-warning.focus,
 .open > .dropdown-toggle.btn-warning:focus,
 .open > .dropdown-toggle.btn-warning:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $warning-focus-color;
     border-color: $warning-focus-color;
 }
 
 .btn-danger {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $danger-color;
     border-color: $danger-color;
 }
 .btn-danger.focus,
 .btn-danger:focus,
 .btn-danger:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $danger-focus-color;
     border-color: $danger-focus-color;
 }
 .btn-danger.active,
 .btn-danger:active,
 .open > .dropdown-toggle.btn-danger {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $danger-focus-color;
     border-color: $danger-focus-color;
 }
@@ -526,7 +541,7 @@ a:hover {
 .open > .dropdown-toggle.btn-danger.focus,
 .open > .dropdown-toggle.btn-danger:focus,
 .open > .dropdown-toggle.btn-danger:hover {
-    color: $text-color;
+    color: $button-text-color;
     background-color: $danger-focus-color;
     border-color: $danger-focus-color;
 }
@@ -539,7 +554,7 @@ a:hover {
     color: $alert-link-color;
 }
 .alert-success {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $success-color;
     border-color: $success-focus-color;
 }
@@ -547,7 +562,7 @@ a:hover {
     border-top-color: $success-focus-color;
 }
 .alert-info {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $success-focus-color;;
     border-color: $info-focus-color;
 }
@@ -555,7 +570,7 @@ a:hover {
     border-top-color: $info-focus-color;
 }
 .alert-warning {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $warning-color;
     border-color: $warning-focus-color;
 }
@@ -563,7 +578,7 @@ a:hover {
     border-top-color: $warning-focus-color;
 }
 .alert-danger {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $danger-color;
     border-color: $danger-focus-color;
 }
@@ -571,7 +586,7 @@ a:hover {
     border-top-color: $danger-focus-color;
 }
 .alert-light {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $light-color;
     border-color: $light-focus-color;
 }
@@ -579,7 +594,7 @@ a:hover {
     border-top-color: $light-focus-color;
 }
 .alert-dark {
-    color: $text-color;
+    color: $alert-text-color;
     background-color: $dark-color;
     border-color: $dark-focus-color;
 }
@@ -593,16 +608,16 @@ a:hover {
  */
 .pagination > li > a,
 .pagination > li > span {
-    color: $text-color;
-    background-color: $secondary-color;
+    color: $pagination-text-color;
+    background-color: $pagination-background-color;
     border-color: $pagination-border-color;
 }
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-    color: $text-color;
-    background-color: $secondary-focus-color;
+    color: $pagination-text-color;
+    background-color: $pagination-focus-background-color;
     border-color: $pagination-border-color;
 }
 .pagination > .active > a,
@@ -611,8 +626,8 @@ a:hover {
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-    color: $text-color;
-    background-color: $primary-color;
+    color: $pagination-active-text-color;
+    background-color: $pagination-active-background-color;
     border-color: $pagination-border-color;
 }
 .pagination > .disabled > a,
@@ -621,26 +636,26 @@ a:hover {
 .pagination > .disabled > span,
 .pagination > .disabled > span:focus,
 .pagination > .disabled > span:hover {
-    color: $text-color;
-    background-color: $secondary-color;
+    color: $pagination-text-color;
+    background-color: $pagination-background-color;
     border-color: $pagination-border-color;
     opacity: 0.65;
 }
 .pager li > a,
 .pager li > span {
-    background-color: $secondary-color;
+    background-color: $pagination-background-color;
     border-color: $pagination-border-color;
 }
 .pager li > a:focus,
 .pager li > a:hover {
-    background-color: $secondary-color;
+    background-color: $pagination-background-color;
     border-color: $pagination-border-color;
 }
 .pager .disabled > a,
 .pager .disabled > a:focus,
 .pager .disabled > a:hover,
 .pager .disabled > span {
-    background-color: $secondary-color;
+    background-color: $pagination-background-color;
     border-color: $pagination-border-color;
     opacity: 0.65;
 }
@@ -655,21 +670,25 @@ a:hover {
 .panel-footer {
     background-color: $panel-footer-background-color;
 }
+.panel > .profil, .panel-default > .panel-heading {
+    color: $panel-text-default-color !important;
+}
 .panel > .profil:hover {
     color: $panel-text-focus-color !important;
     background-color: $panel-background-focus-color !important;
+    border-color: $panel-border-color;
 }
 .panel-heading a {
-    color: $panel-heading-link-color;
+    color: $panel-text-color;
 }
 
 .panel-default {
     border-color: $panel-border-color;
 }
 .panel-default > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $panel-heading-background-color;
-    border-color: $panel-border-color;
+    border-color: $panel-border-color !important;
 }
 .panel-default > .panel-heading+.panel-collapse > .panel-body {
     border-top-color: $panel-border-color;
@@ -686,7 +705,7 @@ a:hover {
     border-color: $primary-color;
 }
 .panel-primary > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $primary-color;
     border-color: $primary-color;
 }
@@ -695,7 +714,11 @@ a:hover {
 }
 .panel-primary > .panel-heading .badge {
     color: $primary-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
+}
+.panel-primary > .panel-heading .badge {
+    color: $primary-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-primary > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $primary-color;
@@ -705,7 +728,7 @@ a:hover {
     border-color: $secondary-color;
 }
 .panel-secondary > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
 }
@@ -714,7 +737,7 @@ a:hover {
 }
 .panel-secondary > .panel-heading .badge {
     color: $secondary-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-secondary > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $secondary-color;
@@ -724,7 +747,7 @@ a:hover {
     border-color: $success-color;
 }
 .panel-success > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $success-color;
     border-color: $success-color;
 }
@@ -733,7 +756,7 @@ a:hover {
 }
 .panel-success > .panel-heading .badge {
     color: $success-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-success > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $success-color;
@@ -743,7 +766,7 @@ a:hover {
     border-color: $info-color;
 }
 .panel-info > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $info-color;
     border-color: $info-color;
 }
@@ -752,7 +775,7 @@ a:hover {
 }
 .panel-info > .panel-heading .badge {
     color: $info-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-info > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $info-color;
@@ -762,7 +785,7 @@ a:hover {
     border-color: $warning-color;
 }
 .panel-warning > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $warning-color;
     border-color: $warning-color;
 }
@@ -771,7 +794,7 @@ a:hover {
 }
 .panel-warning > .panel-heading .badge {
     color: $warning-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-warning > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $warning-color;
@@ -781,7 +804,7 @@ a:hover {
     border-color: $danger-color;
 }
 .panel-danger > .panel-heading {
-    color: $text-color;
+    color: $panel-text-color;
     background-color: $danger-color;
     border-color: $danger-color;
 }
@@ -790,7 +813,7 @@ a:hover {
 }
 .panel-danger > .panel-heading .badge {
     color: $danger-color;
-    background-color: $panel-badge-background-color;
+    background-color: $panel-badge-alt-background-color;
 }
 .panel-danger > .panel-footer+.panel-collapse > .panel-body {
     border-bottom-color: $danger-color;
@@ -891,6 +914,7 @@ caption {
 .table > thead > tr > th.active,
 .table > thead > tr.active > td,
 .table > thead > tr.active > th {
+    color: $text-color;
     background-color: $table-default-focus-background-color;
 }
 .table-hover > tbody > tr > td.active:hover,
@@ -898,6 +922,7 @@ caption {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr.active:hover > th,
 .table-hover > tbody > tr:hover > .active {
+    color: $text-color;
     background-color: $table-default-focus-background-color;
 }
 .table > tbody > tr > td.success,
@@ -912,6 +937,7 @@ caption {
 .table > thead > tr > th.success,
 .table > thead > tr.success > td,
 .table > thead > tr.success > th {
+    color: $table-success-text-color;
     background-color: $table-success-background-color;
 }
 .table-hover > tbody > tr > td.success:hover,
@@ -919,6 +945,7 @@ caption {
 .table-hover > tbody > tr.success:hover > td,
 .table-hover > tbody > tr.success:hover > th,
 .table-hover > tbody > tr:hover > .success {
+    color: $table-success-text-color;
     background-color: $table-success-focus-background-color;
 }
 .table > tbody > tr > td.info,
@@ -933,6 +960,7 @@ caption {
 .table > thead > tr > th.info,
 .table > thead > tr.info > td,
 .table > thead > tr.info > th {
+    color: $table-info-text-color;
     background-color: $table-info-background-color;
 }
 .table-hover > tbody > tr > td.info:hover,
@@ -940,6 +968,7 @@ caption {
 .table-hover > tbody > tr.info:hover > td,
 .table-hover > tbody > tr.info:hover > th,
 .table-hover > tbody > tr:hover > .info {
+    color: $table-info-text-color;
     background-color: $table-info-focus-background-color;
 }
 .table > tbody > tr > td.warning,
@@ -954,6 +983,7 @@ caption {
 .table > thead > tr > th.warning,
 .table > thead > tr.warning > td,
 .table > thead > tr.warning > th {
+    color: $table-warning-text-color;
     background-color: $table-warning-background-color;
 }
 .table-hover > tbody > tr > td.warning:hover,
@@ -961,6 +991,7 @@ caption {
 .table-hover > tbody > tr.warning:hover > td,
 .table-hover > tbody > tr.warning:hover > th,
 .table-hover > tbody > tr:hover > .warning {
+    color: $table-warning-text-color;
     background-color: $table-warning-focus-background-color;
 }
 .table > tbody > tr > td.danger,
@@ -975,6 +1006,7 @@ caption {
 .table > thead > tr > th.danger,
 .table > thead > tr.danger > td,
 .table > thead > tr.danger > th {
+    color: $table-danger-text-color;
     background-color: $table-danger-background-color;
 }
 .table-hover > tbody > tr > td.danger:hover,
@@ -982,6 +1014,7 @@ caption {
 .table-hover > tbody > tr.danger:hover > td,
 .table-hover > tbody > tr.danger:hover > th,
 .table-hover > tbody > tr:hover > .danger {
+    color: $table-danger-text-color;
     background-color: $table-danger-focus-background-color;
 }
 .table > tbody > tr > td.light,
@@ -996,6 +1029,7 @@ caption {
 .table > thead > tr > th.light,
 .table > thead > tr.light > td,
 .table > thead > tr.light > th {
+    color: $table-light-text-color;
     background-color: $table-light-background-color;
 }
 .table-hover > tbody > tr > td.light:hover,
@@ -1003,6 +1037,7 @@ caption {
 .table-hover > tbody > tr.light:hover > td,
 .table-hover > tbody > tr.light:hover > th,
 .table-hover > tbody > tr:hover > .light {
+    color: $table-light-text-color;
     background-color: $table-light-focus-background-color;
 }
 .table > tbody > tr > td.dark,
@@ -1017,6 +1052,7 @@ caption {
 .table > thead > tr > th.dark,
 .table > thead > tr.dark > td,
 .table > thead > tr.dark > th {
+    color: $table-dark-text-color;
     background-color: $table-dark-background-color;
 }
 .table-hover > tbody > tr > td.dark:hover,
@@ -1024,6 +1060,7 @@ caption {
 .table-hover > tbody > tr.dark:hover > td,
 .table-hover > tbody > tr.dark:hover > th,
 .table-hover > tbody > tr:hover > .dark {
+    color: $table-dark-text-color;
     background-color: $table-dark-focus-background-color;
 }
 
@@ -1063,34 +1100,35 @@ caption {
     color: $text-color;
     background-color: $list-background-color;
 }
+
 a.list-group-item,
 button.list-group-item {
-    color: $link-color;
+    color: $list-text-color;
 }
 a.list-group-item .list-group-item-heading,
 button.list-group-item .list-group-item-heading {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item:focus,
 a.list-group-item:hover,
 button.list-group-item:focus,
 button.list-group-item:hover {
-    color: $text-color;
+    color: $list-text-color;
 }
 
 .list-group-item-primary {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $primary-color;
 }
 a.list-group-item-primary,
 button.list-group-item-primary {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-primary:focus,
 a.list-group-item-primary:hover,
 button.list-group-item-primary:focus,
 button.list-group-item-primary:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $primary-focus-color;
 }
 a.list-group-item-primary.active,
@@ -1099,23 +1137,23 @@ a.list-group-item-primary.active:hover,
 button.list-group-item-primary.active,
 button.list-group-item-primary.active:focus,
 button.list-group-item-primary.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $primary-focus-color;
 }
 
 .list-group-item-secondary {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $secondary-color;
 }
 a.list-group-item-secondary,
 button.list-group-item-secondary {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-secondary:focus,
 a.list-group-item-secondary:hover,
 button.list-group-item-secondary:focus,
 button.list-group-item-secondary:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $secondary-focus-color;
 }
 a.list-group-item-secondary.active,
@@ -1124,23 +1162,23 @@ a.list-group-item-secondary.active:hover,
 button.list-group-item-secondary.active,
 button.list-group-item-secondary.active:focus,
 button.list-group-item-secondary.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $secondary-focus-color;
 }
 
 .list-group-item-success {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $success-color;
 }
 a.list-group-item-success,
 button.list-group-item-success {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-success:focus,
 a.list-group-item-success:hover,
 button.list-group-item-success:focus,
 button.list-group-item-success:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $success-focus-color;
 }
 a.list-group-item-success.active,
@@ -1149,23 +1187,23 @@ a.list-group-item-success.active:hover,
 button.list-group-item-success.active,
 button.list-group-item-success.active:focus,
 button.list-group-item-success.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $success-focus-color;
 }
 
 .list-group-item-info {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $info-color;
 }
 a.list-group-item-info,
 button.list-group-item-info {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-info:focus,
 a.list-group-item-info:hover,
 button.list-group-item-info:focus,
 button.list-group-item-info:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $info-focus-color;
 }
 a.list-group-item-info.active,
@@ -1174,23 +1212,23 @@ a.list-group-item-info.active:hover,
 button.list-group-item-info.active,
 button.list-group-item-info.active:focus,
 button.list-group-item-info.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $info-focus-color;
 }
 
 .list-group-item-warning {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $warning-color;
 }
 a.list-group-item-warning,
 button.list-group-item-warning {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-warning:focus,
 a.list-group-item-warning:hover,
 button.list-group-item-warning:focus,
 button.list-group-item-warning:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $warning-focus-color;
 }
 a.list-group-item-warning.active,
@@ -1199,23 +1237,23 @@ a.list-group-item-warning.active:hover,
 button.list-group-item-warning.active,
 button.list-group-item-warning.active:focus,
 button.list-group-item-warning.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $warning-focus-color;
 }
 
 .list-group-item-danger {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $danger-color;
 }
 a.list-group-item-danger,
 button.list-group-item-danger {
-    color: $text-color;
+    color: $list-text-color;
 }
 a.list-group-item-danger:focus,
 a.list-group-item-danger:hover,
 button.list-group-item-danger:focus,
 button.list-group-item-danger:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $danger-focus-color;
 }
 a.list-group-item-danger.active,
@@ -1224,6 +1262,6 @@ a.list-group-item-danger.active:hover,
 button.list-group-item-danger.active,
 button.list-group-item-danger.active:focus,
 button.list-group-item-danger.active:hover {
-    color: $text-color;
+    color: $list-text-color;
     background-color: $danger-focus-color;
 }
