@@ -1,0 +1,163 @@
+// Generic
+$primary-color: #b58900;
+$primary-focus-color: #8f6c00;
+
+$secondary-color: #839496;
+$secondary-focus-color: #6f8183;
+
+$success-color: #2aa198;
+$success-focus-color: #22837b;
+
+$info-color: #2076b2;
+$info-focus-color: #268bd2;
+
+$warning-color: #cb4b16;
+$warning-focus-color: #ba296f;
+
+$danger-color: #d33682;
+$danger-focus-color: #a83e12;
+
+$light-color: #fdf6e3;
+$light-focus-color: #fbeecb;
+
+$dark-color: #073642;
+$dark-focus-color: #05232b;
+
+$background-color: #002b36;
+$background-alt-color: #073642;
+
+$border-color: #0c4655;
+
+
+// Text
+$text-color: #839496;
+$text-alt-color: #002b36;
+
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
+$text-muted-color: #839496;
+$text-help-color: $text-muted-color;
+
+$link-color: #2aa198;
+$link-focus-color: $link-color;
+
+
+// Forms
+$forms-text-color: #495057;
+$forms-background-color: #a9bdbd;
+$forms-placeholder-color: rgba($forms-text-color, 0.8);
+
+
+// Vue.js tree
+$tree-text-focus-color: $text-color;
+$tree-background-focus-color: #a9bdbd;
+$tree-background-selected-color: #b4cccc;
+
+
+// Django autocomplete light
+$dal-result-focus-background-color: #133B45;
+$dal-result-selected-background-color: #dddddd;
+
+
+// Navbar
+$navbar-text-color: rgba(#ffffff, 0.5);
+$navbar-text-focus-color: rgba(#ffffff, 0.75);
+$navbar-text-disabled-color: rgba(#ffffff, 0.25);
+$navbar-brand-color: #ffffff;
+
+$navbar-background-color: #073642;
+$navbar-background-active-color: $navbar-background-color;
+$navbar-border-color: transparent;
+
+$secondary-navbar-background-color: #073642;
+
+
+// Dropdown
+$dropdown-background-focus-color: #002b36;
+
+
+// Buttons
+$button-text-color: #ffffff;
+
+
+// Alerts
+$alert-text-color: #ffffff;
+$alert-link-color: $alert-text-color;
+
+
+// Pagination
+$pagination-text-color: #2aa198;
+$pagination-background-color: $background-color;
+$pagination-focus-background-color: $background-alt-color;
+
+$pagination-active-text-color: rgba(#ffffff, 0.75);
+$pagination-active-background-color: $background-alt-color;
+
+$pagination-border-color: #073642;
+
+
+// Panels
+$panel-text-color: #ffffff;
+$panel-text-focus-color: $text-color;
+$panel-text-default-color: $text-color;
+$panel-background-color: $dark-color;
+$panel-background-focus-color: $dark-focus-color;
+$panel-border-color: $border-color;
+
+$panel-heading-background-color: $dark-color;
+$panel-footer-background-color: $dark-color;
+
+$panel-badge-text-color: $panel-background-color;
+$panel-badge-background-color: $text-color;
+$panel-badge-alt-background-color: #ffffff;
+
+
+// Cards
+$thumbnail-background-color: transparent;
+$thumbnail-border-color: $border-color;
+
+
+// Modals
+$modal-background-color: $panel-background-color;
+$modal-border-color: $border-color;
+$modal-heading-background-color: $modal-background-color;
+$modal-heading-border-color: $border-color;
+
+
+// Tables
+$table-background-color: transparent;
+$table-alt-background-color: rgba(#ffffff, 0.075);
+
+$table-default-text-color: $text-color;
+$table-default-background-color: $background-color;
+$table-default-focus-background-color: $table-default-background-color;
+
+$table-success-text-color: #d9c27a;
+$table-success-background-color: $success-color;
+$table-success-focus-background-color: $success-focus-color;
+
+$table-info-text-color: #d9c27a;
+$table-info-background-color: $info-color;
+$table-info-focus-background-color: $info-focus-color;
+
+$table-warning-text-color: #d9c27a;
+$table-warning-background-color: $warning-color;
+$table-warning-focus-background-color: $warning-focus-color;
+
+$table-danger-text-color: #d9c27a;
+$table-danger-background-color: $danger-color;
+$table-danger-focus-background-color: $danger-focus-color;
+
+$table-light-text-color: $text-alt-color;
+$table-light-background-color: $light-color;
+$table-light-focus-background-color: $light-focus-color;
+
+$table-dark-text-color: #d9c27a;
+$table-dark-background-color: $dark-color;
+$table-dark-focus-background-color: $dark-focus-color;
+
+
+// Lists
+$list-text-color: #ffffff;
+$list-background-color: $background-alt-color;
+$list-border-color: transparent;
