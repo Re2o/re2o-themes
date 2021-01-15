@@ -651,6 +651,9 @@ a:hover {
     color: $panel-text-focus-color !important;
     background-color: $panel-background-focus-color !important;
 }
+.panel-heading a {
+    color: $panel-heading-link-color;
+}
 
 .panel-default {
     border-color: $panel-border-color;
