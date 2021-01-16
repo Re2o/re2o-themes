@@ -134,8 +134,9 @@ a:hover {
 /*
  * Forms
  */
- ::placeholder {
-    color: $forms-text-color;
+::placeholder,
+::-webkit-input-placeholder {
+    color: $forms-placeholder-color !important;
     opacity: 1;
  }
 .form-control {
@@ -167,7 +168,7 @@ a:hover {
     border-color: $border-color;
 }
 .select2-container--default .select2-selection--single {
-    background-color: $forms-background-color;
+    background-color: $forms-background-color !important;
 }
 .select2-search__field {
     color: $forms-text-color;
@@ -178,11 +179,11 @@ a:hover {
     background-color: $forms-background-color;
 }
 .select2-results__option--highlighted {
-    color: $text-color !important;
+    color: $dal-result-focus-text-color !important;
     background-color: $dal-result-focus-background-color !important;
 }
 .select2-container--default .select2-results__option[aria-selected="true"] {
-    color: $text-color !important;
+    color: $dal-result-selected-text-color !important;
     background-color: $dal-result-selected-background-color !important;
 }
 

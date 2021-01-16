@@ -45,7 +45,7 @@ $link-focus-color: $link-color;
 // Forms
 $forms-text-color: #495057;
 $forms-background-color: #a9bdbd;
-$forms-placeholder-color: rgba($forms-text-color, 0.8);
+$forms-placeholder-color: rgba($forms-text-color, 0.6);
 
 
 // Vue.js tree
@@ -55,8 +55,10 @@ $tree-background-selected-color: #b4cccc;
 
 
 // Django autocomplete light
+$dal-result-focus-text-color: $text-color;
 $dal-result-focus-background-color: #133B45;
-$dal-result-selected-background-color: #dddddd;
+$dal-result-selected-text-color: #bfd0d2;
+$dal-result-selected-background-color: #205562;
 
 
 // Navbar
