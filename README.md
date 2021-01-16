@@ -21,3 +21,17 @@ $ make
 ```
 
 The themes' `.min.css` files will be placed in the `build` folder.
+
+## Creating a new theme
+
+To create your own theme, here are the steps:
+
+* Create a new folder for your theme.
+* Copy the `template-variables.scss` file (or a file from an existing theme if you're need a bit of inspiration, for example `solarized/solarized-variables.scss`) and rename it.
+* Create a new `.scss` file which includes the files you need (have a look at `solarized/solarized.scss` for example).
+* Include your theme in the `Makefile` (make sure the name of the recipe is different from the name of your folder or `make` will think it's already compiled).
+* Take some screenshots and populate your theme's README.
+
+The `template.scss` file only helps redefining colors. If you want to change other attributes (such as fonts for example), you can simply add css rules in your theme's main `.scss` file.
+
+Once your theme is ready, make sur to open a merge request here to share it with others!
