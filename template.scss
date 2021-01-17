@@ -730,6 +730,12 @@ a:hover {
     background-color: $panel-background-focus-color !important;
     border-color: $panel-border-color;
 }
+.panel-heading h1 a,
+.panel-heading h2 a,
+.panel-heading h3 a,
+.panel-heading h4 a {
+    color: $panel-text-default-color;
+}
 .panel-heading a {
     color: $panel-text-color;
 }

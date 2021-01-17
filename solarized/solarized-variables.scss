@@ -8,8 +8,8 @@ $secondary-focus-color: #6f8183;
 $success-color: #2aa198;
 $success-focus-color: #22837b;
 
-$info-color: #2076b2;
-$info-focus-color: #268bd2;
+$info-color: #268bd2;
+$info-focus-color: #2076b2;
 
 $warning-color: #cb4b16;
 $warning-focus-color: #a83e12;
@@ -140,32 +140,32 @@ $table-background-color: transparent;
 $table-alt-background-color: rgba(#ffffff, 0.075);
 
 $table-default-text-color: $text-color;
-$table-default-background-color: $background-color;
+$table-default-background-color: darken($background-color, 10%);
 $table-default-focus-background-color: $table-default-background-color;
 
 $table-success-text-color: #d9c27a;
-$table-success-background-color: $success-color;
-$table-success-focus-background-color: $success-focus-color;
+$table-success-background-color: darken($success-color, 10%);
+$table-success-focus-background-color: darken($success-focus-color, 10%);
 
 $table-info-text-color: #d9c27a;
-$table-info-background-color: $info-color;
-$table-info-focus-background-color: $info-focus-color;
+$table-info-background-color: darken($info-color, 10%);
+$table-info-focus-background-color: darken($info-focus-color, 10%);
 
 $table-warning-text-color: #d9c27a;
-$table-warning-background-color: $warning-color;
-$table-warning-focus-background-color: $warning-focus-color;
+$table-warning-background-color: darken($warning-color, 10%);
+$table-warning-focus-background-color: darken($warning-focus-color, 10%);
 
 $table-danger-text-color: #d9c27a;
-$table-danger-background-color: $danger-color;
-$table-danger-focus-background-color: $danger-focus-color;
+$table-danger-background-color: darken($danger-color, 10%);
+$table-danger-focus-background-color: darken($danger-focus-color, 10%);
 
 $table-light-text-color: $text-alt-color;
-$table-light-background-color: $light-color;
-$table-light-focus-background-color: $light-focus-color;
+$table-light-background-color: darken($light-color, 10%);
+$table-light-focus-background-color: darken($light-focus-color, 10%);
 
 $table-dark-text-color: #d9c27a;
-$table-dark-background-color: $dark-color;
-$table-dark-focus-background-color: $dark-focus-color;
+$table-dark-background-color: darken($dark-color, 10%);
+$table-dark-focus-background-color: darken($dark-focus-color, 10%);
 
 
 // Lists
