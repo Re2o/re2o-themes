@@ -154,6 +154,35 @@ a:hover {
 
 
 /*
+ * Labels
+ */
+.label-primary {
+    color: $label-text-color;
+    background-color: $primary-color;
+}
+.label-secondary {
+    color: $label-text-color;
+    background-color: $secondary-color;
+}
+.label-success {
+    color: $label-text-color;
+    background-color: $success-color;
+}
+.label-info {
+    color: $label-text-color;
+    background-color: $info-color;
+}
+.label-warning {
+    color: $label-text-color;
+    background-color: $warning-color;
+}
+.label-danger {
+    color: $label-text-color;
+    background-color: $danger-color;
+}
+
+
+/*
  * Forms
  */
 ::placeholder,
