@@ -42,6 +42,11 @@ $link-color: #337ab7;
 $link-focus-color: #49a8e8;
 
 
+// Highlights
+$bg-text-color: $text-color;
+$bg-link-color: #628bae;
+
+
 // Forms
 $forms-text-color: #555555;
 $forms-background-color: #ffffff;
@@ -84,7 +89,7 @@ $button-text-color: $text-color;
 
 // Alerts
 $alert-text-color: $text-color;
-$alert-link-color: $alert-text-color;
+$alert-link-color: #628bae;
 
 
 // Pagination

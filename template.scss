@@ -73,24 +73,46 @@ a:hover {
  * Highlights
  */
 .bg-primary {
-    color: $text-color;
+    color: $bg-text-color;
     background-color: $primary-color;
 }
+.bg-primary a {
+    color: $bg-link-color;
+}
 .bg-secondary {
-    color: $text-color;
+    color: $bg-text-color;
     background-color: $secondary-color;
 }
+.bg-secondary a {
+    color: $bg-link-color;
+}
 .bg-success {
+    color: $bg-text-color;
     background-color: $success-color;
 }
+.bg-success a {
+    color: $bg-link-color;
+}
 .bg-info {
+    color: $bg-text-color;
     background-color: $info-color;
 }
+.bg-info a {
+    color: $bg-link-color;
+}
 .bg-warning {
+    color: $bg-text-color;
     background-color: $warning-color;
 }
+.bg-warning a {
+    color: $bg-link-color;
+}
 .bg-danger {
+    color: $bg-text-color;
     background-color: $danger-color;
+}
+.bg-danger a {
+    color: $bg-link-color;
 }
 
 
